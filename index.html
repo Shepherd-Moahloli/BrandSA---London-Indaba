@@ -23,7 +23,7 @@
         background-image: url("background-image.png");
         background-size: cover; /* Makes the image cover the whole background */
         background-repeat: no-repeat;
-        background-position: center center;
+        background-position: 55% center;
       }
 
       h1 {
@@ -65,29 +65,37 @@
         left: 85%;
       }
 
-      @media (min-width: 385px) {
+      @media (min-width: 385px) and (max-width: 768px) {
         body {
           background-color: #000000;
+          background-position: 19% 0%;
+          padding: 1.5em;
           width: 100%;
-          background-position: 25% 0%;
         }
 
         h1 {
-          font-size: 4rem;
+          font-size: 1.8rem;
+          margin-bottom: 0.5em;
         }
 
         p {
-          font-size: 2.5rem;
+          font-size: 1rem;
+          margin-bottom: 1.2em;
         }
 
         .btn {
-          font-size: 3rem;
-          border-radius: 1.5rem;
+          font-size: 1rem;
+          padding: 0.8em 1.2em;
+          border-radius: 0.8em;
         }
+
         img {
-          width: 35rem;
-          left: 50%;
-          bottom: 6%;
+          position: absolute;
+          width: 120px;
+          bottom: 20px;
+          right: -100px;
+          left: 70%;
+          top: 81%;
         }
       }
     </style>
